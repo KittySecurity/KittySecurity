@@ -112,3 +112,34 @@ git pull
 # If pulling with unpushed commits
 git pull --rebase
 ```
+
+
+Adding new branch and swiching to it
+
+```
+git checkout -b branch_name
+```
+
+Adding new branch without switching
+
+```
+git branch branch_name
+```
+
+Switching to another branch
+
+```
+git checkout branch_name
+```
+
+Checking current branch
+
+```
+git branch
+```
+
+Checking status of changes 
+
+```
+git status
+```
