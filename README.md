@@ -7,6 +7,7 @@
 - [Technologies](#technologies)
 - [Contributors](#contributors)
 - [Repositories Policy](#repositories-policy)
+- [Helpful Git Commands](#helpful-git-commands)
 
 ## General Info
 
@@ -62,3 +63,52 @@ How you should comment your commits:
 - **docs:** - what was documented
 - **test:** - what tests where added
 
+
+### Helpful Git Commands
+
+Cloning repository
+
+```
+# Clone frontend
+git clone https://github.com/KittySecurity/kittysecurity-frontend.git
+```
+```
+# Clone backend
+git clone https://github.com/KittySecurity/kittysecurity-backend.git
+```
+
+Adding changes to local repository
+
+```
+git add .
+```
+
+
+Commiting changes
+
+```
+git commit -m "messsage"
+```
+
+Pushing to remote repository
+
+```
+# if branch is already on remote repository
+git push
+```
+
+```
+# if branch is not on remote repository
+git push --set-upstream origin branch_name
+```
+
+Pulling from remote repository
+
+```
+git pull
+```
+
+```
+# If pulling with unpushed commits
+git pull --rebase
+```
