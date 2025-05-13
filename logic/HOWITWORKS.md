@@ -24,7 +24,7 @@
 2. Creates new record in database with user data
 3. Returns response with status of operation
 
-## Login
+## LOGIN
 
 #### Frontend
 
@@ -43,17 +43,17 @@
 3. Recives request with hash key and verify with one in database
 4. Generates [JWT](https://jwt.io/) and sends it to user with status of operation
 
-## Passwords access
+## PASSWORD ACCESS
 
 #### Frontend 
 
 1. After login user sends request to server to recive all passwords
-2. Recives all password entries
+2. Recives all password entires
 3. If user wants to access (copy/see) password client generates [AES-GCM](https://en.wikipedia.org/wiki/Galois/Counter_Mode) based on master key/passowrd and vi
 4. Decrypts password entire with [AES-GCM](https://en.wikipedia.org/wiki/Galois/Counter_Mode) key
 
 #### Backend
 
 1. Recives request from client
-2. Gathers all password entiers assigned to user
-3. Send all password entiers in response with status of operation
+2. Gathers all password entires assigned to user
+3. Send all password entires in response with status of operation
