@@ -2,8 +2,8 @@
 
 ## BASIC CONCEPTS
 
-- Master key and passwords are never stored in database
-- Master key is stored as hash key(only read) and salt
+- Master password and created passwords are never stored in database
+- Master password is stored as master hash(only read)
 - Password are stored as password entiers encrypted with [AES-GCM](https://en.wikipedia.org/wiki/Galois/Counter_Mode)
 - [AES-GCM](https://en.wikipedia.org/wiki/Galois/Counter_Mode) keys are not stored in database they are generated on client site
 - Comunnication between client and server is secured by HTTPS (for educational purposes self signed cert will be used)
