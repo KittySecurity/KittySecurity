@@ -20,7 +20,7 @@
 
 #### Backend
 
-1. Recives Json with user data with username, email, master key and salt
+1. Recives Json with user data with username, email, master key
 2. Creates new record in database with user data
 3. Returns response with status of operation
 
@@ -76,3 +76,201 @@
 <p align="center" width="100%">
 <img src="../img/diagram-crypto.png" alt="diagram-crypto">
 </p>
+
+## API CRUD
+
+Endpoint:
+
+```
+/auth/login
+```
+
+POST 
+```
+{
+    "email": string
+    "master_hash": string
+}
+```
+
+Response
+```
+{
+    "access_token": string
+    "expires_in": int
+    "refresh_token": string
+}
+```
+
+Endpoint:
+
+```
+/auth/register
+```
+
+POST
+```
+{
+    "username": string
+    "email": string
+    "master_hash": string
+}
+```
+
+Response
+```
+{
+    "status": string
+    "username": string
+    "email": string
+}
+```
+
+
+Endpoint:
+
+```
+/api/v1/user
+```
+
+GET 
+
+Response
+``` 
+{
+    "id": int
+    "username": string
+    "email": string
+    "created_at": string
+    "updated_at": string
+}
+```
+
+Endpoint:
+
+```
+/api/v1/user/{id}
+```
+
+PUT
+```
+{
+    "username": string //optional
+    "email": string //optional
+    "master_hash": string //optional
+    "updated_at": string //optional
+}
+```
+
+Response
+```
+{
+    "status": string
+    "username": string //optional
+    "email": string //optional
+    "updated_at": string //optional
+}
+```
+
+Endpoint:
+
+```
+/api/v1/user/{id}
+```
+
+DELETE
+
+Response
+```
+{
+    "status": string
+}
+```
+
+Endpoint:
+
+```
+/api/v1/password
+```
+
+POST
+```
+{
+    "name": string
+    "url": string
+    "login": string
+    "encrypted": string
+    "IV": string
+}
+```
+
+Response
+```
+{
+    "status": string
+    "id": int
+    "name": string
+    "url": string
+    "login": string
+    "encrypted": string
+    "IV": string
+}
+```
+
+Endpoint:
+
+```
+/api/v1/passowrd/{id}
+```
+
+GET
+
+Response
+```
+{
+    "id": int
+    "name": string
+    "url": string
+    "login": string
+    "encrypted": string
+    "IV": string
+}
+```
+
+Endpoint:
+
+```
+/api/v1/password/{id}
+```
+
+DELETE
+
+Response
+```
+{
+    "statius": string
+}
+```
+
+Endpoint:
+
+```
+/api/v1/passwords
+```
+GET
+
+Response
+```
+{
+    "entries": [
+        "id": {
+        "name": string
+        "url": string
+        "login": string
+        "encrypted": string
+        "IV": string
+        },
+        ...
+    ]
+}
+```
