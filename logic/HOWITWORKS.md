@@ -96,9 +96,11 @@ POST
 Response
 ```
 {
+    "access_token_type": string
     "access_token": string
-    "expires_in": int
+    "access_token_expires_in": long
     "refresh_token": string
+    "refresh_token_expires_in": long
 }
 ```
 
