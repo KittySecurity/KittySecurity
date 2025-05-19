@@ -151,7 +151,7 @@ Response
 Endpoint:
 
 ```
-/api/v1/user/{id}
+/api/v1/user
 ```
 
 PUT
@@ -177,11 +177,18 @@ Response
 Endpoint:
 
 ```
-/api/v1/user/{id}
+/api/v1/user
 ```
 
 DELETE
 
+Request 
+
+```
+{
+    "master_hash": string
+}
+```
 Response
 ```
 {
