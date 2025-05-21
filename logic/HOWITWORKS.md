@@ -167,9 +167,9 @@ Response
 ```
 {
     "status": string
-    "username": string //optional
-    "email": string //optional
-    "updated_at": string //optional
+    "username": string 
+    "email": string 
+    "updated_at": string
 }
 ```
 
