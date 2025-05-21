@@ -160,7 +160,6 @@ PUT
     "username": string //optional
     "email": string //optional
     "master_hash": string //optional
-    "updated_at": string //optional
 }
 ```
 
