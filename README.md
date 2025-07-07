@@ -36,7 +36,6 @@ The project is built using the following technologies:
 
 #### Backend Team
 - [VoxeveR](https://github.com/VoxeveR) - co-owner of org
-- [newmon13](https://github.com/newmon13)
 - [CottonCandyHeart](https://github.com/CottonCandyHeart)
 - [Mautyn](https://github.com/Mautyn)
 
